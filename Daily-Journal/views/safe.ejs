@@ -1,0 +1,8 @@
+<%-include("partials/header.ejs") %>
+<h1>Home</h1>
+<p><%=home %></p>
+<% posts.forEach((post)=>{%>
+    <h1><%=post.title %></h1>
+    <p><%=post.short %>...<a href="/posts/<%=post.readMore%>">Read more</a></p>
+<% }) %>
+<%-include("partials/footer.ejs") %>
